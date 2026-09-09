@@ -7,6 +7,9 @@ use App\Http\Controllers\AuthController;
 //use App\Http\Controllers\ProductController;
 
 // --- RUTAS PÚBLICAS ---
+Route::get('/prueba', function () {
+    return '¡La ruta de prueba funciona correctamente!';
+});
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
 
