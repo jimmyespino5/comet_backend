@@ -16,7 +16,7 @@ Route::get('/prueba', function () {
 });
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
-Route::post('/attendance', [AttendanceController::class, 'register']);
+Route::post('/attendance', [AttendanceController::class, 'create']);
 
 // --- RUTAS PROTEGIDAS POR SANCTUM ---
 Route::middleware('auth:sanctum')->group(function () {
