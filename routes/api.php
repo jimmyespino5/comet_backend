@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\TournamentController;
 use App\Http\Controllers\Admin\TournamentRegistrationController;
+use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\League\PlayerController;
 use App\Http\Controllers\League\TeamController;
@@ -15,6 +16,7 @@ Route::get('/prueba', function () {
 });
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
+Route::post('/attendance', [AttendanceController::class, 'register']);
 
 // --- RUTAS PROTEGIDAS POR SANCTUM ---
 Route::middleware('auth:sanctum')->group(function () {
