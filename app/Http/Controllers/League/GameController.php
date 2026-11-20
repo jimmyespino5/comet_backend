@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\League;
 
-use App\Models\PlayerPayment;
+use App\Http\Controllers\Controller;
+use App\Models\Game;
 use Illuminate\Http\Request;
 
-class PlayerPaymentController extends Controller
+class GameController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +35,7 @@ class PlayerPaymentController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(PlayerPayment $playerPayment)
+    public function show(Game $game)
     {
         //
     }
@@ -42,7 +43,7 @@ class PlayerPaymentController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(PlayerPayment $playerPayment)
+    public function edit(Game $game)
     {
         //
     }
@@ -50,7 +51,7 @@ class PlayerPaymentController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, PlayerPayment $playerPayment)
+    public function update(Request $request, Game $game)
     {
         //
     }
@@ -58,7 +59,7 @@ class PlayerPaymentController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(PlayerPayment $playerPayment)
+    public function destroy(Game $game)
     {
         //
     }

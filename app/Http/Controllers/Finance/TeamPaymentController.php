@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Finance;
 
-use App\Models\Group;
+use App\Http\Controllers\Controller;
+use App\Models\TeamPayment;
 use Illuminate\Http\Request;
 
-class GroupController extends Controller
+class TeamPaymentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +35,7 @@ class GroupController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Group $group)
+    public function show(TeamPayment $teamPayment)
     {
         //
     }
@@ -42,7 +43,7 @@ class GroupController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Group $group)
+    public function edit(TeamPayment $teamPayment)
     {
         //
     }
@@ -50,7 +51,7 @@ class GroupController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Group $group)
+    public function update(Request $request, TeamPayment $teamPayment)
     {
         //
     }
@@ -58,7 +59,7 @@ class GroupController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Group $group)
+    public function destroy(TeamPayment $teamPayment)
     {
         //
     }

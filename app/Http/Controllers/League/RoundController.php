@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\League;
 
-use App\Models\Team;
+use App\Http\Controllers\Controller;
+use App\Models\Round;
 use Illuminate\Http\Request;
 
-class TeamController extends Controller
+class RoundController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +35,7 @@ class TeamController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Team $team)
+    public function show(Round $round)
     {
         //
     }
@@ -42,7 +43,7 @@ class TeamController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Team $team)
+    public function edit(Round $round)
     {
         //
     }
@@ -50,7 +51,7 @@ class TeamController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Team $team)
+    public function update(Request $request, Round $round)
     {
         //
     }
@@ -58,7 +59,7 @@ class TeamController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Team $team)
+    public function destroy(Round $round)
     {
         //
     }

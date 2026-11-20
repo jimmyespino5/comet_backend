@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\League;
 
-use App\Models\TournamentRegistration;
+use App\Http\Controllers\Controller;
+use App\Models\Goal;
 use Illuminate\Http\Request;
 
-class TournamentRegistrationController extends Controller
+class GoalController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +35,7 @@ class TournamentRegistrationController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(TournamentRegistration $tournamentRegistration)
+    public function show(Goal $goal)
     {
         //
     }
@@ -42,7 +43,7 @@ class TournamentRegistrationController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(TournamentRegistration $tournamentRegistration)
+    public function edit(Goal $goal)
     {
         //
     }
@@ -50,7 +51,7 @@ class TournamentRegistrationController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, TournamentRegistration $tournamentRegistration)
+    public function update(Request $request, Goal $goal)
     {
         //
     }
@@ -58,7 +59,7 @@ class TournamentRegistrationController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(TournamentRegistration $tournamentRegistration)
+    public function destroy(Goal $goal)
     {
         //
     }

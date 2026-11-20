@@ -21,6 +21,7 @@ use Spatie\Permission\Traits\HasRoles; // Añadimos esta
 #[Fillable(['name', 'email', 'password','role_id',
         'last_name',
         'phone',
+        'dni',
         'is_active',])]
 
 #[Hidden(['password', 'remember_token'])]

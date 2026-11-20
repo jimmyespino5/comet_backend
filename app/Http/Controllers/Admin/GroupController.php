@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Models\Player;
+use App\Http\Controllers\Controller;
+use App\Models\Group;
 use Illuminate\Http\Request;
 
-class PlayerController extends Controller
+class GroupController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +35,7 @@ class PlayerController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Player $player)
+    public function show(Group $group)
     {
         //
     }
@@ -42,7 +43,7 @@ class PlayerController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Player $player)
+    public function edit(Group $group)
     {
         //
     }
@@ -50,7 +51,7 @@ class PlayerController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Player $player)
+    public function update(Request $request, Group $group)
     {
         //
     }
@@ -58,7 +59,7 @@ class PlayerController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Player $player)
+    public function destroy(Group $group)
     {
         //
     }
